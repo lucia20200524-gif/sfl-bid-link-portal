@@ -1,0 +1,1 @@
+ALTER TABLE `portal_accounts` ADD `lark_base_url` text DEFAULT '' NOT NULL;
