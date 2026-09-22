@@ -1,0 +1,30 @@
+.member-lark-settings { min-width: 0; scroll-margin-top: 5rem; }
+.member-lark-settings h2 { font-size: 1.3rem; line-height: 1.5; }
+.member-lark-settings h3 { font-size: 1.05rem; line-height: 1.6; font-weight: 700; margin: .4rem 0 0; }
+.member-lark-settings p { font-size: 1rem; line-height: 1.8; margin: .6rem 0; }
+.member-lark-settings .tool-disclosure { margin-top: 1rem; }
+.member-lark-form { display: grid; gap: 1rem; padding: 1rem; min-width: 0; }
+.member-lark-form form.member-lark-form { padding: 0; }
+.member-lark-form .form-field { display: grid; gap: .5rem; min-width: 0; font-size: 1rem; }
+.member-lark-form input { font-size: 1rem; min-width: 0; max-width: 100%; min-height: 2.8rem; }
+.member-lark-form small { font-size: .9rem; line-height: 1.7; }
+.member-lark-form .button { width: fit-content; max-width: 100%; min-height: 2.8rem; white-space: normal; }
+.member-lark-credentials { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.member-lark-state { display: grid; gap: .4rem; padding: 1rem; border: 1px solid var(--border); border-radius: .6rem; background: var(--secondary); }
+.member-lark-state strong { display: flex; align-items: center; gap: .4rem; font-size: 1.05rem; }
+.member-lark-state span { font-size: 1rem; line-height: 1.7; }
+.member-lark-targets { display: grid; gap: .5rem; padding: .75rem 0; margin: 0; list-style: none; }
+.member-lark-targets a { display: inline-flex; align-items: center; gap: .4rem; min-height: 2.75rem; text-decoration: underline; text-underline-offset: .2em; }
+.member-lark-check { display: flex; align-items: flex-start; gap: .6rem; font-size: 1rem; line-height: 1.7; }
+.member-lark-check input { flex: 0 0 auto; min-height: 1.2rem; width: 1.2rem; height: 1.2rem; margin-top: .25rem; }
+.member-lark-help summary,.member-lark-disconnect summary { cursor: pointer; padding: .65rem 0; font-weight: 600; font-size: .95rem; }
+.member-lark-disconnect { margin-top: 1rem; }
+.member-lark-disconnect .button { margin-top: .8rem; }
+.lark-save-destination { display: block; font-size: .9rem; line-height: 1.7; overflow-wrap: anywhere; flex-basis: 100%; }
+.lark-save-destination a { text-decoration: underline; text-underline-offset: .2em; }
+@media(max-width: 640px) {
+  .member-lark-credentials { grid-template-columns: minmax(0,1fr); }
+  .member-lark-form { padding: .8rem; }
+  .member-lark-form .button { width: 100%; }
+  .membership-account-body .member-lark-settings .panel-heading { flex-wrap: wrap; }
+}

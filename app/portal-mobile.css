@@ -1,0 +1,83 @@
+/* Match the sidebar's mobile breakpoint. Keep desktop density independent. */
+@media screen and (max-width: 767px) {
+  html { zoom: 1; -webkit-text-size-adjust: 100%; }
+  html, html:is([data-navigator-theme="male"], [data-navigator-theme="female"]) {
+    --portal-type-page: 1.75rem;
+    --portal-type-section: 1.4rem;
+    --portal-type-card: 1.2rem;
+    --portal-type-body: 1.0625rem;
+    --portal-type-label: 1rem;
+    --portal-type-caption: .9375rem;
+  }
+  .app-shell, .app-main, .workspace-content, .workspace-content > *, .panel > * { min-width: 0; }
+  .app-main { width: 100%; }
+  .workspace-content { padding: 1rem max(.75rem, env(safe-area-inset-right)) max(2rem, env(safe-area-inset-bottom)) max(.75rem, env(safe-area-inset-left)); }
+  .workspace-content :is(p, h1, h2, h3, a, summary, dd, td), .candidate-sheet-body { overflow-wrap: anywhere; }
+  .workspace-content :is(.discovery-search, .discovery-results, .discovery-progress, .settings-overview, .signature-card) { padding: 1rem; }
+  .app-topbar { gap: .65rem; padding: .75rem max(.75rem, env(safe-area-inset-right)) .75rem max(.75rem, env(safe-area-inset-left)); }
+  .topbar-title { width: 100%; min-width: 0; gap: .65rem; }
+  .topbar-title strong { min-width: 0; white-space: normal; overflow-wrap: anywhere; font-size: 1rem; }
+  .topbar-actions { width: 100%; min-width: 0; flex-wrap: wrap; justify-content: flex-end; gap: .5rem; }
+  .topbar-text-size { flex-wrap: wrap; gap: .4rem; }
+  .topbar-text-size .display-text-sizes label { min-width: 44px; min-height: 44px; }
+  .today-label { display: none; }
+  .portal-mobile-menu-trigger { min-height: 44px; padding: .5rem; }
+  [data-sidebar="sidebar"][data-mobile="true"] { width: min(20rem, 92vw); max-width: 92vw; height: 100dvh; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
+  .portal-mobile-menu-close { min-height: 44px; }
+  [data-sidebar="sidebar"][data-mobile="true"] [data-slot="sidebar-menu-button"] { height: auto; min-height: 44px; padding-block: .75rem; }
+  [data-sidebar="sidebar"][data-mobile="true"] [data-slot="sidebar-menu-button"] > span { min-width: 0; white-space: normal; overflow: visible; overflow-wrap: anywhere; text-overflow: clip; }
+  .page-heading, .panel-heading, .discovery-status-toolbar { flex-wrap: wrap; gap: .75rem; }
+  .page-heading { margin-bottom: 1rem; }
+  .navigator-summary { grid-template-columns: 3rem minmax(0, 1fr); gap: .5rem .75rem; padding: .8rem; }
+  .navigator-portrait { min-height: 3rem; grid-row: 1; }
+  .navigator-portrait img { width: 3rem; height: 3rem; }
+  html .workspace-content .navigator-title { font-size: 1.2rem; }
+  .navigator-label strong { display: inline; }
+  .navigator-toggle { min-height: 44px; }
+  .navigator-character-picker { justify-content: flex-start; padding: .75rem; }
+  .navigator-character-option { min-height: 44px; }
+  .collection-mode-tabs[data-slot="tabs-list"] { grid-template-columns: minmax(0, 1fr); gap: .5rem; }
+  .collection-mode-tabs [data-slot="tabs-trigger"] { flex-direction: row; align-items: center; min-height: 44px; padding: .7rem; gap: .75rem; }
+  .mode-copy { min-width: 0; }
+  .mode-copy strong { font-size: 1.0625rem; }
+  .mode-selected { flex-shrink: 0; }
+  .discovery-workspace { gap: 1rem; }
+  .discovery-source-grid, .workbench-grid { grid-template-columns: minmax(0, 1fr); }
+  .discovery-toolbar, .discovery-start-row { align-items: stretch; }
+  .discovery-start-row .button, .discovery-status-toolbar .actions { width: 100%; }
+  .discovery-status-toolbar .actions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+  html :is(.workspace-content, .candidate-sheet) :is(.button, .text-button) { min-height: 44px; white-space: normal; max-width: 100%; }
+  html .workspace-content :is(.discovery-views, .discovery-categories) button { min-height: 44px; white-space: normal; min-width: 0; }
+  .discovery-views { grid-template-columns: minmax(0,1fr); }
+  html :is(.workspace-content, .candidate-sheet) :is(input, textarea, select) { font-size: max(16px, 1rem); max-width: 100%; }
+  .discovery-pagination { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .6rem; }
+  .discovery-pagination > span { grid-column: 1/-1; }
+  .discovery-status-counts { grid-template-columns: minmax(0,1fr); }
+  .discovery-status-counts > div { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
+  .discovery-status-counts dd { margin: 0; font-size: 1.9rem; }
+  .discovery-status-source-heading { display: grid; gap: .3rem; }
+  .discovery-progress summary { min-height: 44px; padding-block: .6rem; }
+  .discovery-status-sources ul { gap: .75rem; }
+  .discovery-progress li { padding: .75rem; }
+  .opportunity-table-hint { display: none; }
+  html :is(.opportunity-table-summary, .discovery-coverage .discovery-table, .onboarding-table) { display: block; width: 100%; min-width: 0; }
+  :is(.opportunity-table-summary, .discovery-coverage .discovery-table, .onboarding-table) thead { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  :is(.opportunity-table-summary, .discovery-coverage .discovery-table, .onboarding-table) tbody { display: grid; gap: 1rem; }
+  :is(.opportunity-table-summary, .discovery-coverage .discovery-table, .onboarding-table) tbody tr { display: block; border: 1px solid var(--border); border-radius: .6rem; padding: .85rem; }
+  html :is(.opportunity-table-summary, .discovery-coverage .discovery-table, .onboarding-table) td { display: block; width: 100%; padding: .5rem 0; border: 0; }
+  :is(.opportunity-table-summary, .discovery-coverage .discovery-table, .onboarding-table) td[data-label]::before { content: attr(data-label); display: block; margin-bottom: .25rem; color: var(--foreground); font-size: var(--portal-type-caption); font-weight: 600; }
+  .onboarding-table-scroll { border: 0; }
+  html[data-navigator-theme] .onboarding-table :is(tr, tr:nth-child(even), tr:hover) td { background: transparent; }
+  .onboarding-table tbody tr { background: var(--card); }
+  html .workspace-content .opportunity-table-title { font-size: var(--portal-type-card); }
+  .opportunity-table-summary .button { width: 100%; }
+  .discovery-table-scroll { max-width: 100%; min-width: 0; }
+  .candidate-sheet { height: 100dvh; max-height: 100dvh; padding-bottom: env(safe-area-inset-bottom); overscroll-behavior: contain; }
+  .candidate-sheet .candidate-sheet-body { padding: 1rem; }
+  html .candidate-sheet-body h2 { font-size: 1.35rem; }
+  .candidate-summary-fields > div { grid-template-columns: minmax(0,1fr); }
+  .candidate-followup .opportunity-actions { display: grid; grid-template-columns: minmax(0,1fr); }
+  .candidate-official-link, .candidate-close { width: 100%; }
+  .person-tabs { flex-wrap: wrap; width: 100%; }
+  .signature-card pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+}

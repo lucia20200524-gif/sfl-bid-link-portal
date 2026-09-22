@@ -1,0 +1,48 @@
+/* Read the essentials first; supporting records stay available on demand. */
+.candidate-sheet > [data-slot="sheet-header"] { border-bottom:1px solid var(--border); padding-bottom:1rem; }
+.candidate-sheet .candidate-sheet-body { gap:1.4rem; padding-top:.5rem; }
+.candidate-heading { display:grid; gap:.65rem; }
+html .candidate-heading h2 { margin:0; font-size:1.65rem; font-weight:700; line-height:1.55; }
+.candidate-agency { display:flex; flex-wrap:wrap; gap:.4rem .8rem; margin:0; font-size:var(--portal-type-body,1.25rem); }
+.candidate-agency > span { color:var(--muted-foreground); font-size:var(--portal-type-caption,1.1rem); }
+.candidate-sheet .candidate-deadline { margin:0; padding:1rem 1.25rem; border-left:4px solid var(--action-fill); border-radius:.4rem; background:var(--secondary); color:var(--foreground); }
+.candidate-deadline dt { color:var(--muted-foreground); font-size:var(--portal-type-caption,1.1rem); }
+.candidate-deadline dd { margin:.25rem 0; font-size:1.9rem; font-weight:700; line-height:1.4; font-variant-numeric:tabular-nums; }
+.candidate-deadline small { display:block; margin-top:.4rem; font-weight:var(--portal-type-support-weight,400); color:var(--muted-foreground); font-size:var(--portal-type-caption,1.1rem); line-height:1.6; }
+.candidate-summary-fields { margin:0; display:grid; }
+.candidate-summary-fields > div { display:grid; grid-template-columns:7rem minmax(0,1fr); gap:.5rem 1rem; padding:1rem 0; border-bottom:1px solid var(--border); }
+.candidate-summary-fields > div:first-child { padding-top:0; }
+.candidate-summary-fields dt { font-size:var(--portal-type-caption,1.1rem); font-weight:600; color:var(--muted-foreground); line-height:1.8; }
+.candidate-summary-fields dd { margin:0; font-size:var(--portal-type-body,1.25rem); font-weight:500; line-height:1.8; white-space:pre-wrap; overflow-wrap:anywhere; }
+.candidate-official-link { justify-self:start; min-height:3.5rem; padding-inline:1.5rem; }
+.candidate-disclosures { display:grid; border-top:1px solid var(--border); }
+.candidate-disclosure { border-bottom:1px solid var(--border); }
+.candidate-disclosure > summary { display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:3.5rem; padding:1rem .25rem; font-size:var(--portal-type-label,1.125rem); font-weight:700; color:var(--foreground); list-style:none; cursor:pointer; }
+.candidate-disclosure > summary::-webkit-details-marker { display:none; }
+.candidate-disclosure > summary::after { content:"＋"; color:var(--action-fill); flex-shrink:0; font-size:1.35rem; }
+.candidate-disclosure[open] > summary::after { content:"−"; }
+.candidate-disclosure > summary:hover { background:var(--secondary); }
+.candidate-disclosure-body { padding:.25rem .25rem 1.25rem; }
+.candidate-disclosure .opportunity-brief { margin:0; display:grid; grid-template-columns:minmax(0,1fr); gap:0; }
+.candidate-disclosure .opportunity-brief > div { padding:1rem 0; background:transparent; border:0; border-bottom:1px solid var(--border); border-radius:0; }
+.candidate-disclosure .opportunity-brief > div:last-child { border:0; }
+.candidate-reference { display:grid; gap:1rem; min-width:0; }
+.candidate-reference > details > summary, .candidate-followup summary { padding:.65rem 0; font-size:var(--portal-type-label,1.125rem); cursor:pointer; color:var(--foreground); }
+.candidate-evidence { display:grid; gap:1rem; margin:1rem 0; }
+.candidate-evidence dt { color:var(--muted-foreground); font-size:var(--portal-type-caption,1.1rem); }
+.candidate-evidence dd { margin:.4rem 0 0; padding-left:.8rem; border-left:2px solid var(--border); overflow-wrap:anywhere; white-space:pre-wrap; font-size:var(--portal-type-body,1.25rem); line-height:1.8; }
+.candidate-followup { display:grid; gap:1rem; }
+html .candidate-followup h3 { margin:0; font-size:var(--portal-type-label,1.125rem); font-weight:700; }
+.candidate-followup .candidate-primary-actions { display:grid; gap:1rem; }
+.candidate-followup .opportunity-actions { justify-content:flex-start; gap:.75rem; }
+.candidate-followup .candidate-review-tools { margin:0; }
+.candidate-manage > p { margin:.4rem 0 1rem; }
+.candidate-close { justify-self:end; min-width:7rem; }
+@media (max-width:600px) {
+  html .candidate-heading h2 { font-size:1.5rem; }
+  .candidate-sheet .candidate-sheet-body { gap:1.2rem; }
+  .candidate-summary-fields > div { grid-template-columns:minmax(0,1fr); gap:.25rem; padding:.85rem 0; }
+  .candidate-deadline dd { font-size:1.65rem; }
+  .candidate-official-link, .candidate-close { width:100%; }
+  .candidate-followup .opportunity-actions { align-items:stretch; }
+}

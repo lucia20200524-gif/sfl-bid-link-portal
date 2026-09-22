@@ -1,0 +1,232 @@
+/* A shared reading hierarchy. Rem units preserve the user's 大・中・小 setting.
+   Screen-only rules leave the technical specification's print layout intact. */
+@media screen {
+  :root, html:is([data-navigator-theme="male"], [data-navigator-theme="female"]) {
+    --portal-type-page: clamp(2.35rem, 2.1rem + 1vw, 2.8rem);
+    --portal-type-section: 1.75rem;
+    --portal-type-card: 1.625rem;
+    --portal-type-body: 1.375rem;
+    --portal-type-label: 1.25rem;
+    --portal-type-caption: 1.1875rem;
+    --portal-type-support-weight: 500;
+  }
+
+  /* With the desktop page scale, 中 uses 17.6px body / 16px controls /
+     15.2px captions. 小 retains readable captions at 14.44px. */
+  html :is(.workspace-content, .candidate-sheet, .onboarding-tour) {
+    font-size: var(--portal-type-body);
+    letter-spacing: .02em;
+    line-height: 1.8;
+  }
+  html :is(.workspace-content, .candidate-sheet) :is(h1, h2, h3) { letter-spacing: .015em; }
+
+  html :is(.workspace-content, .candidate-sheet-body) p {
+    font-size: var(--portal-type-body);
+    font-weight: var(--portal-type-support-weight);
+    line-height: 1.8;
+  }
+  html :is(.workspace-content, .candidate-sheet) :is(strong, b) { font-weight: 700; }
+  html .page-heading h1 {
+    font-size: var(--portal-type-page);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: .015em;
+    overflow-wrap: anywhere;
+  }
+  html .page-heading h1 + p { margin-top: .7rem; }
+  html .workspace-content h2,
+  html .workspace-content .panel-heading h2 {
+    font-size: var(--portal-type-section);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  html .workspace-content h3 {
+    font-size: var(--portal-type-card);
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  html :is(.workspace-content, .candidate-sheet) .eyebrow {
+    font-size: var(--portal-type-caption);
+    font-weight: 600;
+    letter-spacing: .08em;
+    line-height: 1.6;
+  }
+  html .workspace-content :is(.panel-heading, .support-title, .useful-info-heading) h2 + p { margin-top: .5rem; }
+
+  /* Give case names the most emphasis within the compact result cards. */
+  html .opportunity-card h3,
+  html .opportunity-summary h3 {
+    font-size: var(--portal-type-card);
+    font-weight: 700;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  html :is(.opportunity-summary, .opportunity-brief) dt {
+    font-size: var(--portal-type-caption);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  html :is(.opportunity-summary, .opportunity-brief) dd {
+    font-size: var(--portal-type-body);
+    font-weight: 500;
+    line-height: 1.8;
+  }
+  html .opportunity-summary { gap: 1.3rem; }
+  html .opportunity-summary dt { margin-bottom: .3rem; }
+  html .opportunity-brief [data-unknown="true"] dd { font-size: var(--portal-type-body); font-weight: var(--portal-type-support-weight); }
+  html .opportunity-type span { font-size: var(--portal-type-caption); font-weight: 700; }
+  html .discovery-table .discovery-title { font-size: 1.4rem; font-weight: 700; line-height: 1.65; }
+  html :is(.discovery-table, .opportunity-card) .discovery-agency { font-size: var(--portal-type-body); font-weight: 500; }
+  html .discovery-deadline { font-size: 1.5rem; font-weight: 700; }
+  html .candidate-sheet [data-slot="sheet-title"] { font-size: var(--portal-type-section); font-weight: 700; }
+  html .candidate-sheet [data-slot="sheet-description"] { font-size: var(--portal-type-caption); font-weight: var(--portal-type-support-weight); line-height: 1.8; }
+  html .candidate-sheet-body h2 { font-size: 2rem; font-weight: 700; line-height: 1.55; }
+  html .candidate-sheet-body h3 { font-size: var(--portal-type-card); font-weight: 700; }
+
+  /* Counts and key amounts read before their labels and explanatory notes. */
+  html :is(.stat-card, .insight-metrics > div) > strong {
+    font-size: clamp(2.5rem, 2rem + 1vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    font-variant-numeric: tabular-nums;
+  }
+  html :is(.stat-card, .insight-metrics > div) > span { font-size: var(--portal-type-label); font-weight: 600; }
+  html .stat-card strong small { font-size: var(--portal-type-caption); font-weight: var(--portal-type-support-weight); }
+  html :is(.work-metric, .detail-metric, .assistant-progress) > strong { font-size: 2rem; font-weight: 700; }
+  html .oc-feature-result-heading h2 span { font-size: 2.5rem; font-weight: 700; }
+  html .support-price { font-size: 2rem; font-weight: 700; line-height: 1.5; }
+  html .support-price span { font-size: var(--portal-type-caption); font-weight: var(--portal-type-support-weight); }
+
+  /* Action labels stay bold; supporting text uses the theme reading weight. */
+  html :is(.workspace-content, .candidate-sheet) :is(.button, .text-button) {
+    font-size: var(--portal-type-label);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  html :is(.workspace-content, .candidate-sheet) :is(.button.primary, .discovery-assess-button) { font-weight: 700; }
+  html :is(.workspace-content, .candidate-sheet) .discovery-review { font-size: var(--portal-type-label) !important; }
+  html :is(.discovery-search label, .form-field > span, .workbench-grid > label) { font-size: var(--portal-type-label); font-weight: 600; }
+  html :is(.discovery-views, .oc-feature-views) button { font-size: var(--portal-type-label); font-weight: 700; }
+  html .workspace-content :is(.form-hint, .discovery-note, .discovery-attribution, .discovery-provenance,
+    .onboarding-note, .support-note, .oc-feature-note, .corpus-summary, .source-domain,
+    .column-byline, .column-sources, .engineer-evidence, .engineer-document-date, .stat-card > p),
+  html :is(.workspace-content, .candidate-sheet-body) :is(.opportunity-match, .synonym-reasons) p,
+  html :is(.opportunity-brief, .opportunity-card) small {
+    font-size: var(--portal-type-caption);
+    font-weight: var(--portal-type-support-weight);
+    line-height: 1.8;
+  }
+  html :is(.discovery-pagination > span, .detail-metric > span, .discovery-progress summary span) {
+    font-size: var(--portal-type-caption);
+    font-weight: var(--portal-type-support-weight);
+  }
+  html :is(.workspace-content, .candidate-sheet-body) .app-error { font-size: var(--portal-type-label); font-weight: 700; }
+
+  /* Navigation, guidance, and longer reading pages use the same scale. */
+  html .workspace-content .navigator-title { font-size: 1.6rem; font-weight: 700; line-height: 1.55; }
+  html .workspace-content .navigator-description { font-size: var(--portal-type-body); font-weight: var(--portal-type-support-weight); }
+  html .navigator-label { font-size: var(--portal-type-caption); font-weight: var(--portal-type-support-weight); }
+  html .navigator-label strong { font-weight: 700; }
+  html .navigator-steps h2 { font-size: var(--portal-type-card); font-weight: 700; }
+  html .workspace-content .column-article-header h2 { font-size: var(--portal-type-page); line-height: 1.5; }
+  html .column-index-title { font-size: var(--portal-type-card); font-weight: 700; line-height: 1.65; }
+  html .workspace-content :is(.column-lead, .column-keypoint p) { font-size: 1.4rem; line-height: 1.9; }
+  html .workspace-content .column-keypoint p { font-weight: 700; }
+  html .workspace-content :is(.column-section, .column-checklist) h3 { font-size: var(--portal-type-section); font-weight: 700; }
+  html .workspace-content .bid-flow-step-heading h2 { font-size: 2rem; }
+  html .workspace-content .assistant-card-heading h2 { font-size: var(--portal-type-card); }
+  html .workspace-content .engineer-document-header h2 { font-size: 2rem; }
+  html .app-brand strong { font-size: 1.5rem; font-weight: 700; line-height: 1.5; letter-spacing: .015em; }
+  html :is(.app-brand small, .brand-kicker, .sidebar-label, .sidebar-user small, .app-footer) {
+    font-size: var(--portal-type-caption);
+    font-weight: var(--portal-type-support-weight);
+    line-height: 1.6;
+  }
+  html [data-slot="sidebar-menu-button"] { font-size: var(--portal-type-label); font-weight: 500; }
+  html [data-slot="sidebar-menu-button"][data-active="true"] { font-weight: 700; }
+  html :is(.topbar-text-size, .sidebar-user strong, .discovery-toolbar,
+    .stat-card strong small, .work-metric strong small, .generated-keyword-count,
+    .collection-source-option small, .workflow-strip li > span, .match-location,
+    .excerpt-label, .assistant-status, .pill) {
+    font-size: var(--portal-type-caption);
+    font-weight: 600;
+    line-height: 1.7;
+  }
+  html :is(.workspace-content, .candidate-sheet) :is(input, textarea, select) { font-weight: 500; }
+  html .workspace-content :is(.bid-flow-tasks li, .bid-flow-documents ul, .specs-list li) {
+    font-size: var(--portal-type-body);
+    line-height: 1.8;
+  }
+
+  /* Older views have local small-text sizes. Keep their captions and controls
+     aligned with the light themes' shared reading scale, including disclosures. */
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"])
+    :is(.workspace-content, .candidate-sheet, .onboarding-tour) small,
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"])
+    :is(.navigator-character-picker > span, .navigator-label, .navigator-toggle,
+      .today-label, .text-size-label, .app-footer, .sidebar-target,
+      .muted, .qualification-fixed-expiry, .column-index-kicker, .column-count,
+      .lark-featured-category, .column-index-category, .column-index-category > span,
+      .column-category, .specs-note, .specs-status, .connection-state,
+      .tool-disclosure > summary span, .synonym-switch > span,
+      .discovery-search label small, .collection-shared-note, .qualification-lock-badge,
+      .qualification-summary > strong, .discovery-source-url, .discovery-tags span,
+      .discovery-progress li details, .candidate-status span, .condition-state,
+      .candidate-assessment blockquote, .brief-evidence, .task-kind,
+      .engineer-small, .engineer-architecture span, .architecture-connector,
+      .engineer-catalog a, .engineer-document-footer,
+      .bid-flow-guide-bar > div:first-child > span, .bid-flow-scope, .bid-flow-sources,
+      .bid-flow-tip, .bid-flow-step-heading > span, .bid-flow-example > span,
+      .onboarding-tour-top, .source-domain, .column-byline, .column-sources) {
+    font-size: var(--portal-type-caption);
+    font-weight: var(--portal-type-support-weight);
+    line-height: 1.75;
+  }
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"])
+    :is(.workspace-content, .candidate-sheet) :is(input, textarea, select, th, td),
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"])
+    :is(.navigator-character-option, .workspace-content [data-slot="tabs-trigger"],
+      .workspace-content [data-slot="accordion-trigger"], .bid-flow-prev, .bid-flow-next,
+      .lark-featured-read, .useful-info-open, .column-page-link) {
+    font-size: var(--portal-type-label);
+    line-height: 1.65;
+  }
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"])
+    :is(.workspace-content, .candidate-sheet) input:not([type="checkbox"], [type="radio"], [type="range"]),
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"])
+    .workspace-content [data-slot="tabs-trigger"] {
+    height: auto;
+    min-height: 3rem;
+  }
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"]) :is(.person-tabs, .collection-mode-tabs) {
+    height: auto;
+    align-items: stretch;
+  }
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"]) .person-tabs [data-slot="tabs-trigger"] {
+    padding: .75rem 1rem;
+    white-space: normal;
+  }
+  html:is([data-navigator-theme="male"], [data-navigator-theme="female"])
+    :is(.opportunity-summary dt, .opportunity-brief dt, .candidate-agency > span,
+      .candidate-deadline dt, .candidate-evidence dt, .navigator-character-picker > span) {
+    font-weight: 600;
+  }
+
+  html .workspace-content :is(.tool-disclosure > summary, .discovery-source-title,
+    .candidate-disclosure > summary, .discovery-categories button) {
+    font-size: var(--portal-type-label);
+    font-weight: 600;
+    line-height: 1.65;
+  }
+  html .workspace-content :is(.mode-copy strong, .sidebar-nav-toggle) { letter-spacing: .015em; }
+  html .workspace-content .discovery-source-grid strong { font-size: var(--portal-type-label); font-weight: 700; }
+  html .workspace-content .discovery-source-grid small { font-size: var(--portal-type-caption); line-height: 1.7; }
+  html .workspace-content :is(.discovery-table, .onboarding-table, .specs-table, .bid-table) th { font-weight: 600; }
+  html .workspace-content :is(.discovery-table, .onboarding-table, .specs-table, .bid-table) td { line-height: 1.8; }
+  html .workspace-content .notice-original { line-height: 1.9; }
+
+  @media (max-width: 600px) {
+    :root { --portal-type-section: 1.65rem; --portal-type-card: 1.4rem; }
+    html .candidate-sheet-body h2 { font-size: 1.75rem; }
+  }
+}

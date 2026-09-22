@@ -1,0 +1,257 @@
+/* Shared color roles across both navigators. Solid reading surfaces,
+   strong primary actions, and explicit selected states replace the glass finish.
+   Keep print styles and the operating system's forced colors independent. */
+@media screen and (forced-colors: none) {
+  :root, html[data-navigator-theme="male"], html[data-navigator-theme="female"] {
+    --background: #f3f6f8; --card: #ffffff; --secondary: #edf3f6;
+    --foreground: #1d2b37; --navy: #122637; --muted-foreground: #47586b;
+    --border: #c6d2db; --control-border: #718493;
+    --action-fill: #174b66; --action-ink: #ffffff; --action-hover: #10364b; --action-soft: #e6f0f5;
+    --nav-surface: #132b3b; --nav-hover: #243f51; --nav-selected: #e6f0f5; --nav-selected-ink: #183d54; --nav-muted: #d9e5ed;
+    --status-success: #18563d; --status-success-bg: #eaf5ef;
+    --status-attention: #70450c; --status-attention-bg: #fff2d6;
+    --status-error: #94283e; --status-error-bg: #fff0f2;
+    --open-counter-fill: #fbe2a0; --open-counter-ink: #573c0f; --open-counter-edge: #99711e;
+    --open-counter-row: #fffdf5; --open-counter-hover: #fff4d6; --open-counter-divider: #d6bd83;
+    --unified-fill: #dfecfa; --unified-ink: #1f4773; --unified-edge: #48719b;
+  }
+  html[data-navigator-theme="female"] {
+    --background: #f7f4f7; --secondary: #f2ebf1;
+    --foreground: #302b36; --navy: #322435; --muted-foreground: #5b4d61;
+    --border: #d8cbd6; --control-border: #887382;
+    --action-fill: #713f64; --action-hover: #542c4c; --action-soft: #f3e8f0;
+    --nav-surface: #302336; --nav-hover: #4b3549; --nav-selected: #f3e8f0; --nav-selected-ink: #4a2b43; --nav-muted: #ebdfe9;
+  }
+  html[data-navigator-theme] {
+    --primary: var(--action-fill); --primary-foreground: var(--action-ink); --action-edge: var(--action-fill);
+    --popover: var(--card); --popover-foreground: var(--foreground);
+    --muted: var(--secondary); --accent: var(--action-soft); --focus-ring: var(--action-fill);
+    --block-border: var(--border); --section-divider: var(--border);
+    --surface-shadow: none; --crystal-shadow: none; --crystal-edge: none; --crystal-face: none; --crystal-gloss: none;
+  }
+  html[data-navigator-theme] .app-main { background: var(--background); }
+  /* Change text and background together when switching themes or selection. */
+  html[data-navigator-theme] :is(button, a, .navigator-character-option) { transition: none; }
+  html[data-navigator-theme] :is(.app-topbar, .app-footer) { background: var(--card); color: var(--muted-foreground); border-color: var(--border); box-shadow: none; backdrop-filter: none; }
+  html[data-navigator-theme] .app-topbar { border-top-color: var(--action-fill); }
+  html[data-navigator-theme] :is(.panel, .workspace-content .panel, .work-metric, .stat-card, .source-card, .assistant-card, .portal-navigator,
+    .work-launch, .access-card, .editor-section, .onboarding-tour, .defense-browser-panel, .candidate-sheet,
+    [data-slot="dialog-content"], [data-slot="popover-content"], [data-slot="select-content"]) {
+    background: var(--card); color: var(--foreground); border-color: var(--border); box-shadow: 0 2px 6px #172c4005;
+  }
+  html[data-navigator-theme] .workspace-content[data-view] > .page-heading {
+    background: transparent; border: 0;
+    padding: .25rem 0 .75rem; border-radius: 0; box-shadow: none;
+  }
+  html[data-navigator-theme] .workspace-content :is(.discovery-search, .discovery-results) { border-top: 2px solid var(--action-fill); }
+  html[data-navigator-theme] :is(.workspace-content, .candidate-sheet-body) :is(h1, h2, h3) { color: var(--navy); }
+  html[data-navigator-theme] :is(.workspace-content, .candidate-sheet-body) p { color: var(--foreground); }
+  html[data-navigator-theme] :is(.navigator-title, .column-index-title, .opportunity-table-title, .opportunity-summary h3, .topbar-title strong) { color: var(--navy); }
+  html[data-navigator-theme] :is(.page-heading h1 + p, .navigator-description, .navigator-label,
+    .muted, .form-hint, .support-note, .onboarding-note, .oc-feature-note, .corpus-summary, .corpus-summary span,
+    .discovery-provenance, .source-domain, .today-label, .opportunity-summary dt, .opportunity-brief dt, .opportunity-brief small,
+    .discovery-pagination > span, .navigator-character-picker > span, .synonym-search > p, .synonym-search small) { color: var(--muted-foreground); }
+  /* These two legacy text rules already use !important in each old palette. */
+  html[data-navigator-theme] :is(.discovery-note, .discovery-attribution) { color: var(--muted-foreground) !important; }
+  html[data-navigator-theme] :is(.eyebrow, .text-button, .discovery-source-url, .discovery-attribution a, .discovery-provenance a, .support-price) { color: var(--action-fill); }
+
+  html[data-navigator-theme] :is(.empty-state, .editor-section legend) { color:var(--foreground); }
+  html[data-navigator-theme] .editor-section legend span { color:var(--muted-foreground); }
+
+  /* Only the current navigation item receives a filled highlight. */
+  html[data-navigator-theme] :is([data-slot="sidebar-inner"], [data-sidebar="sidebar"]) { background: var(--nav-surface); color: #f5f7fb; border-color: var(--nav-hover); box-shadow: none; }
+  html[data-navigator-theme] :is(.app-sidebar, [data-sidebar="sidebar"]) [data-slot="sidebar-menu-button"] {
+    background: transparent; color: #f5f7fb; border: 1px solid transparent; box-shadow: none;
+  }
+  html[data-navigator-theme] :is(.app-sidebar, [data-sidebar="sidebar"]) [data-slot="sidebar-menu-button"]:hover { background: var(--nav-hover); color: #ffffff; }
+  html[data-navigator-theme] :is(.app-sidebar, [data-sidebar="sidebar"]) [data-slot="sidebar-menu-button"][data-active="true"] {
+    background: var(--nav-selected); color: var(--nav-selected-ink); border-color: var(--nav-selected); box-shadow: inset 4px 0 currentColor;
+  }
+  html[data-navigator-theme] :is(.app-sidebar, [data-sidebar="sidebar"]) [data-slot="sidebar-menu-button"] :is(span, svg) { color: inherit; }
+  html[data-navigator-theme] :is(.brand-kicker, .app-brand small, .sidebar-label, .sidebar-user small, .sidebar-target, .sidebar-tools > summary) { color: var(--nav-muted); }
+  html[data-navigator-theme] .sidebar-target { background: var(--nav-hover); border-color: var(--nav-hover); }
+  html[data-navigator-theme] .sidebar-target > svg { color: var(--nav-muted); }
+  html[data-navigator-theme] .sidebar-user .avatar { background: var(--nav-selected); color: var(--nav-selected-ink); }
+
+  /* Guidance stays quiet beside the search and result actions. */
+  html[data-navigator-theme] :is(.navigator-summary, .navigator-detail) { background: var(--card); color: var(--foreground); }
+  html[data-navigator-theme] .navigator-summary:hover { background: var(--secondary); }
+  html[data-navigator-theme] :is(.navigator-character-picker, .navigator-portrait, .today-label, .synonym-search,
+    .support-service-heading, .support-table th, .signature-card pre, .editor-context, .detail-metric, .notice-original) {
+    background: var(--secondary); color: var(--foreground); border-color: var(--border); box-shadow: none;
+  }
+  html[data-navigator-theme] .navigator-portrait img { animation: none; filter: none; }
+  html[data-navigator-theme] :is(.navigator-toggle, .navigator-character-option) { background: var(--card); color: var(--foreground); border-color: var(--control-border); box-shadow: none; }
+  html[data-navigator-theme] .navigator-character-option[data-selected="true"] { background: var(--action-fill); color: var(--action-ink); border-color: var(--action-fill); box-shadow: none; }
+  html[data-navigator-theme] .navigator-character-option [data-slot="radio-group-item"] { color: inherit; border-color: currentColor; }
+  html[data-navigator-theme] .navigator-character-option [data-slot="radio-group-indicator"] { color: inherit; }
+  html[data-navigator-theme] :is(.navigator-step-number, .onboarding-number, .assistant-card-index) { background: var(--action-soft); color: var(--action-fill); box-shadow: none; }
+
+  /* Primary vs. secondary is consistent in every theme and every view. */
+  html[data-navigator-theme] :is(.button.primary:not(:disabled), .button.challenge-button, .discovery-assess-button) {
+    background: var(--action-fill); color: var(--action-ink); border-color: var(--action-fill); box-shadow: none;
+  }
+  html[data-navigator-theme] :is(.button.primary, .button.challenge-button, .discovery-assess-button):hover:not(:disabled) { background: var(--action-hover); color: var(--action-ink); border-color: var(--action-hover); }
+  html[data-navigator-theme] :is(.button.secondary, .button.light, .keyword-chips > button, .search-presets button) {
+    background: var(--card); color: var(--action-fill); border-color: var(--control-border); box-shadow: none;
+  }
+  html[data-navigator-theme] :is(.button.secondary, .button.light, .keyword-chips > button, .search-presets button):hover:not(:disabled) { background: var(--action-soft); color: var(--action-fill); border-color: var(--action-fill); }
+  html[data-navigator-theme] :is(.workspace-content, .candidate-sheet) .button:disabled {
+    background: var(--secondary); color: var(--muted-foreground); border-color: var(--border); opacity: 1; box-shadow: none;
+  }
+  html[data-navigator-theme] :is(.workspace-content, .candidate-sheet) :is(input:not([type="checkbox"], [type="radio"]), textarea, select) {
+    background: var(--card); color: var(--foreground); border-color: var(--control-border); box-shadow: none;
+  }
+  html[data-navigator-theme] :is(input, textarea)::placeholder { color: var(--muted-foreground); opacity: 1; }
+  html[data-navigator-theme] :is(input[type="checkbox"], input[type="radio"]) { accent-color: var(--action-fill); }
+  html[data-navigator-theme] [data-mode] { --mode-color: var(--action-fill); --mode-soft: var(--action-soft); --mode-border: var(--control-border); --discovery-accent: var(--action-fill); }
+  html[data-navigator-theme] :is(.collection-mode-tabs, .result-layout) [data-slot="tabs-trigger"],
+  html[data-navigator-theme] :is(.discovery-views, .discovery-categories, .discovery-source-grid, .oc-feature-views) button {
+    background: var(--card); color: var(--foreground); border-color: var(--control-border); box-shadow: none;
+  }
+  html[data-navigator-theme] .collection-mode-tabs .mode-copy small,
+  html[data-navigator-theme] .discovery-source-grid small { color: var(--muted-foreground); }
+  html[data-navigator-theme] :is(.collection-mode-tabs, .result-layout, .bid-insights) [data-slot="tabs-trigger"][data-state="active"],
+  html[data-navigator-theme] :is(.discovery-source-grid, .oc-feature-views) button[aria-pressed="true"] {
+    background: var(--action-fill); color: var(--action-ink); border-color: var(--action-fill); box-shadow: none;
+  }
+  html[data-navigator-theme] .collection-mode-tabs [data-state="active"] :is(strong, .mode-copy small),
+  html[data-navigator-theme] .discovery-source-grid button[aria-pressed="true"] :is(strong, small) { color: var(--action-ink); }
+  html[data-navigator-theme] .mode-icon { color: var(--action-fill); background: var(--action-soft); box-shadow: none; }
+  html[data-navigator-theme] [data-state="active"] .mode-icon { color: var(--action-ink); background: transparent; box-shadow: none; }
+  html[data-navigator-theme] .discovery-views button span { background: var(--secondary); color: var(--foreground); }
+  html[data-navigator-theme] :is(.discovery-views, .discovery-categories) button[aria-pressed="true"] { box-shadow: none !important; }
+  html[data-navigator-theme] :is(.discovery-source-select, .discovery-coverage, .tool-disclosure, .qualification-summary li) { background: var(--secondary); color: var(--foreground); border-color: var(--border); }
+
+  /* A category keeps the same color in filters, cards, lists and details. */
+  html[data-navigator-theme] :is(.discovery-categories, .opportunity-type) [data-category="open-counter"] {
+    --type-fill: var(--open-counter-fill); --type-ink: var(--open-counter-ink); --type-edge: var(--open-counter-edge);
+  }
+  html[data-navigator-theme] :is(.discovery-categories, .opportunity-type) [data-category="unified-required"] {
+    --type-fill: var(--unified-fill); --type-ink: var(--unified-ink); --type-edge: var(--unified-edge);
+  }
+  html[data-navigator-theme] .opportunity-type [data-category] {
+    background: var(--type-fill, var(--card)); color: var(--type-ink, var(--foreground)); border-color: var(--type-edge, var(--border));
+  }
+  /* Selected filter colors override the older navigator's important rules. */
+  html[data-navigator-theme] .discovery-categories button:is([data-category="open-counter"], [data-category="unified-required"]) {
+    background: var(--type-fill) !important; color: var(--type-ink) !important; border-color: var(--type-edge) !important;
+    font-weight:700;
+  }
+  html[data-navigator-theme] .discovery-categories button:is([data-category="open-counter"], [data-category="unified-required"])[aria-pressed="true"] {
+    outline:2px solid var(--type-ink); outline-offset:2px;
+  }
+
+  /* Result names and dates carry emphasis; table bands separate rows. */
+  html[data-navigator-theme] :is(.opportunity-card, .opportunity-brief > div, .discovery-table-scroll) { background: var(--card); color: var(--foreground); border-color: var(--border); box-shadow: none; }
+  html[data-navigator-theme] .opportunity-card { border-top-color: var(--action-fill); }
+  html[data-navigator-theme] .opportunity-card[data-open-counter="true"] { background: var(--open-counter-row); border-color: var(--open-counter-edge); }
+  html[data-navigator-theme] :is(.discovery-table, .onboarding-table) th { background: var(--secondary); color: var(--navy); border-color: var(--border); }
+  html[data-navigator-theme] :is(.discovery-table, .onboarding-table) td { background: var(--card); color: var(--foreground); border-color: var(--border); }
+  html[data-navigator-theme] :is(.discovery-table, .onboarding-table) tr:nth-child(even) td { background: var(--background); }
+  html[data-navigator-theme] :is(.discovery-table, .onboarding-table) tr:hover td { background: var(--action-soft); }
+  html[data-navigator-theme] .discovery-table tr[data-open-counter="true"] > td { background: var(--open-counter-row); border-bottom-color: var(--open-counter-divider); }
+  html[data-navigator-theme] .discovery-table tr[data-open-counter="true"]:hover > td { background: var(--open-counter-hover); }
+  html[data-navigator-theme] :is(.discovery-deadline, .stat-card > strong, .work-metric > strong) { color: var(--navy); }
+  html[data-navigator-theme] :is(.discovery-agency, .opportunity-table-agency, .opportunity-summary dd, .opportunity-brief dd) { color: var(--foreground); }
+
+  /* Older pages used their own pale caption colors. Share the reading ink
+     without changing white labels on filled buttons or selected controls. */
+  html[data-navigator-theme] :is(.stat-card > span, .stat-card strong small,
+    .work-metric > span, .work-metric strong small, .work-empty,
+    .action-copy small, .action-count, .generated-keyword-count,
+    .collection-source-option small, .collection-region, .collection-url,
+    .collection-results .cell-secondary, .collection-results .excerpt-label,
+    .collection-table .collection-row-number, .result-category-help,
+    .discovery-toolbar, .discovery-table small, .discovery-empty,
+    .navigator-steps p, .launch-label, .work-launch-action > span,
+    .workflow-strip li > span, .match-location, .excerpt-label) {
+    color: var(--muted-foreground);
+  }
+  html[data-navigator-theme] :is(.discovery-workspace, .collection-results, .specs-page,
+    .collection-item-summary, .collection-agency, .collection-date) { color: var(--foreground); }
+  html[data-navigator-theme] :is(.person-tabs [data-slot="tabs-trigger"],
+    .collection-keywords > span, .discovery-tags span, .pill, .assistant-status) {
+    background: var(--secondary); color: var(--foreground); border-color: var(--border);
+  }
+  html[data-navigator-theme] .person-tabs [data-state="active"] {
+    background: var(--action-fill); color: var(--action-ink); border-color: var(--action-fill);
+  }
+  html[data-navigator-theme] :is(.collection-item-title, .discovery-title) { color: var(--navy); }
+  html[data-navigator-theme] :is(.navigator-steps .text-button, .keyword-generator .generate-keywords,
+    .specs-table a, .engineer-references a, .discovery-page-issue a) { color: var(--action-fill); }
+  html[data-navigator-theme] :is(.specs-table, .bid-table) th {
+    background: var(--secondary); color: var(--navy); border-color: var(--border);
+  }
+  html[data-navigator-theme] :is(.manual-search-callout, .work-launch-action, .browser-progress) {
+    background: var(--card); color: var(--foreground); border: 1px solid var(--border); box-shadow: none;
+  }
+  html[data-navigator-theme] .manual-search-callout :is(h2, .eyebrow) { color: var(--navy); }
+  html[data-navigator-theme] :is(.onboarding-tour, .bid-flow-pager, .workspace-content) button:disabled {
+    opacity: 1;
+  }
+  html[data-navigator-theme] :is(.bid-flow-pager, .onboarding-tour) button:disabled {
+    background: var(--secondary); color: var(--muted-foreground); border-color: var(--border);
+  }
+  html[data-navigator-theme] :is(.workspace-content, .candidate-sheet-body) a:not([class]) {
+    color: var(--action-fill); text-decoration: underline; text-underline-offset: .2em;
+  }
+
+  /* Meaning stays stable: green = confirmed, amber = attention, red = error. */
+  html[data-navigator-theme] :is(.condition-state.match, .workbench-success, .connection-state.connected, .assistant-status.done, .status-won, .status-completed, .fit-A, .specs-status:not(.pending, .partial)) { background: var(--status-success-bg); color: var(--status-success); border-color: var(--status-success); }
+  html[data-navigator-theme] :is(.condition-state.attention, .discovery-badges .attention, .work-metric.urgent, .deadline-date.urgent, .status-preparing, .fit-B, .specs-status.pending, .connection-state:not(.connected)) { background: var(--status-attention-bg); color: var(--status-attention); border-color: var(--status-attention); }
+  html[data-navigator-theme] :is(.status-reviewing, .status-submitted, .fit-C, .specs-status.partial) { background: var(--action-soft); color: var(--action-fill); border-color: var(--action-fill); }
+  html[data-navigator-theme] .status-lost { background: var(--status-error-bg); color: var(--status-error); border-color: var(--status-error); }
+  html[data-navigator-theme] .discovery-workspace .attention { color: var(--status-attention) !important; }
+  html[data-navigator-theme] :is(.app-error, .lark-row-error) { background: var(--status-error-bg); color: var(--status-error); border-color: var(--status-error); }
+  html[data-navigator-theme] :is(.app-error, .lark-row-error) :is(p, strong),
+  html[data-navigator-theme] .support-emphasis { color: var(--status-error); }
+  html[data-navigator-theme] :is(.condition-state, .candidate-status span) { background: var(--secondary); color: var(--foreground); border-color: var(--control-border); }
+  html[data-navigator-theme] .condition-state.match { background: var(--status-success-bg); color: var(--status-success); border-color: var(--status-success); }
+  html[data-navigator-theme] .condition-state.attention { background: var(--status-attention-bg); color: var(--status-attention); border-color: var(--status-attention); }
+
+  /* Article surfaces follow the chosen palette; illustrated covers keep theirs. */
+  html[data-navigator-theme] .sfl-columns {
+    color-scheme: inherit;
+    --info-paper: var(--card); --info-stripe: var(--background); --info-heading: var(--secondary); --info-edge: var(--border);
+    --info-text: var(--foreground); --info-title: var(--navy); --info-muted: var(--muted-foreground);
+    --info-button: var(--action-fill); --info-button-hover: var(--action-hover);
+  }
+  html[data-navigator-theme] :is(.lark-featured, .column-lark-cta) { background: var(--secondary); border-color: var(--border); }
+  html[data-navigator-theme] .lark-featured-card { background: var(--card); border-color: var(--border); }
+  html[data-navigator-theme] :is(.useful-info-open, .lark-featured-read, .column-page-link[aria-current="page"], .column-lark-cta .button) { background: var(--action-fill); color: var(--action-ink); border-color: var(--action-fill); }
+  html[data-navigator-theme] :is(.useful-info-open, .column-page-link[aria-current="page"]):hover { background: var(--action-hover); color: var(--action-ink); border-color: var(--action-hover); }
+
+  /* Light section edges frame the content; controls retain stronger outlines. */
+  html[data-navigator-theme] .workspace-content :is(.panel, .assistant-card, .portal-navigator) { border-width: 1px; border-radius: .85rem; }
+  html[data-navigator-theme] .workspace-content :is(.discovery-search, .discovery-results) { border-top-width: 2px; }
+  html[data-navigator-theme] :is(.workspace-content, .candidate-sheet) .button { border-width: 1px; border-radius: .6rem; letter-spacing: .02em; }
+  html[data-navigator-theme] .collection-mode-tabs [data-slot="tabs-trigger"] { border-width: 1px; border-radius: .75rem; }
+  html[data-navigator-theme] .workspace-content .opportunity-card { border-top-width: 2px; box-shadow: 0 2px 6px #172c4005; }
+  html[data-navigator-theme] .opportunity-card:focus-within { outline: 2px solid var(--action-fill); outline-offset: 3px; }
+  html[data-navigator-theme] .tool-disclosure[open] { background: var(--card); }
+  html[data-navigator-theme] .tool-disclosure > summary { border-radius: .6rem; }
+  html[data-navigator-theme] .tool-disclosure > summary:hover { background: var(--action-soft); }
+  html[data-navigator-theme] .tool-disclosure[open] > summary { background: var(--secondary); border-radius: .6rem .6rem 0 0; }
+  html[data-navigator-theme] :is(.discovery-source-grid, .discovery-views, .oc-feature-views) button:not([aria-pressed="true"]):hover { background: var(--action-soft); border-color: var(--action-fill); }
+
+  html[data-navigator-theme] :is(button, a, input, textarea, select, summary, [tabindex="0"]):focus-visible {
+    outline: 3px solid var(--action-fill); outline-offset: 3px; box-shadow: 0 0 0 2px var(--card);
+  }
+  html[data-navigator-theme] :is(.app-sidebar, [data-sidebar="sidebar"]) [data-slot="sidebar-menu-button"]:focus-visible { outline-color: var(--nav-selected); }
+
+  /* Free search has its own green accent, scoped to this tab in both themes. */
+  html[data-navigator-theme] .collection-mode-tabs [data-slot="tabs-trigger"][data-mode="free"] {
+    --action-fill: #14634f; --action-hover: #104d3e; --action-soft: #d5eddf;
+    --mode-color: #14634f; --mode-soft: #d5eddf; --mode-border: #40836d;
+    background: #e9f7f0; color: #124c3c; border-color: #40836d;
+  }
+  html[data-navigator-theme] .collection-mode-tabs [data-mode="free"] .mode-copy :is(strong, small) { color: inherit; }
+  html[data-navigator-theme] .collection-mode-tabs [data-slot="tabs-trigger"][data-mode="free"]:hover:not([data-state="active"]) {
+    background: #d5eddf; border-color: #14634f;
+  }
+  html[data-navigator-theme] .collection-mode-tabs [data-slot="tabs-trigger"][data-mode="free"][data-state="active"] {
+    background: #14634f; color: #ffffff; border-color: #14634f;
+  }
+  html[data-navigator-theme] .collection-mode-tabs [data-slot="tabs-trigger"][data-mode="free"][data-state="active"]:hover { background: #104d3e; border-color: #104d3e; }
+}

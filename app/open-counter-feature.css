@@ -1,0 +1,25 @@
+.open-counter-feature { display:grid; gap:1.5rem; }
+.oc-feature-controls { border-top:5px solid #d79812; padding:1.35rem; }
+.oc-feature-intro, .oc-feature-result-heading { display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; }
+.oc-feature-mark { display:inline-flex; align-items:center; gap:.55rem; color:var(--foreground); font-size:1.15rem; font-weight:800; }
+.oc-feature-intro p, .oc-feature-result-heading p { margin:.5rem 0; font-size:1rem; }
+.oc-feature-views { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.65rem; margin:1.25rem 0; }
+html .oc-feature-views button { display:flex; justify-content:center; align-items:center; gap:.55rem; min-height:3.5rem; padding:.8rem; border:2px solid var(--border); border-radius:.7rem; background:var(--card); color:var(--foreground); font-size:1rem; font-weight:750; cursor:pointer; }
+html .oc-feature-views button[aria-pressed=true] { background:#ffe08a; border-color:#a66600; color:#342300; box-shadow:0 3px 0 #a66600; }
+html .oc-feature-views button:hover { border-color:#a66600; }
+html .oc-feature-views button:focus-visible { outline:3px solid var(--primary); outline-offset:3px; }
+.oc-feature-selects { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+.oc-feature-selects label { display:grid; gap:.45rem; min-width:0; font-weight:700; }
+.oc-feature-note { font-size:.95rem; line-height:1.8; color:var(--muted-foreground); margin:1rem 0 0; }
+.oc-feature-results { min-width:0; }
+.oc-feature-result-heading { margin:0 0 1rem; }
+.oc-feature-result-heading h2 { display:flex; align-items:baseline; flex-wrap:wrap; gap:1rem; font-size:1.3rem; margin:0; }
+.oc-feature-result-heading h2 span { font-size:1.8rem; }
+.oc-feature-result-heading p { color:var(--muted-foreground); }
+.oc-feature-empty { background:var(--card); color:var(--foreground); border:1px solid var(--border); border-radius:.8rem; padding:2rem; text-align:center; }
+.oc-feature-empty>svg { margin:auto; }
+.oc-feature-empty h3 { font-size:1.2rem; }
+.oc-feature-empty p { margin:.75rem 0 1.25rem; }
+.oc-feature-pagination { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:1rem; margin-top:1.5rem; }
+@media(max-width:950px) { .oc-feature-views { grid-template-columns:repeat(2,minmax(0,1fr)); } .oc-feature-selects { grid-template-columns:1fr; } }
+@media(max-width:480px) { .oc-feature-controls { padding:1rem; } .oc-feature-views { grid-template-columns:1fr; } .oc-feature-pagination { gap:.5rem; } }
