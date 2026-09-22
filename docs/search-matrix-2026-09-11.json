@@ -1,0 +1,906 @@
+{
+  "testedAt": "2026-09-11T07:59:01.471Z",
+  "scope": "Live official API + production component rendering. Browser authentication and Lark writes not tested.",
+  "rows": [
+    {
+      "mode": "sfl",
+      "modeLabel": "SFL専用",
+      "sourceId": "kkj",
+      "sourceLabel": "官公需情報ポータル",
+      "keywords": "生成AI研修、DX研修、リスキリング、業務改善、Webサイト制作",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:54:03.788Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E7%94%9F%E6%88%90AI%E7%A0%94%E4%BF%AE+OR+DX%E7%A0%94%E4%BF%AE+OR+%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%AA%E3%83%B3%E3%82%B0+OR+%E6%A5%AD%E5%8B%99%E6%94%B9%E5%96%84+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C&Count=300",
+          "status": 200,
+          "contentLength": null
+        },
+        {
+          "count": 50,
+          "url": "https://www.kkj.go.jp/api/?Query=%E7%94%9F%E6%88%90AI%E7%A0%94%E4%BF%AE+OR+DX%E7%A0%94%E4%BF%AE+OR+%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%AA%E3%83%B3%E3%82%B0+OR+%E6%A5%AD%E5%8B%99%E6%94%B9%E5%96%84+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C&Count=50",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "rows",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 5,
+      "upstreamHits": 2318,
+      "inspectedCount": 50,
+      "matchedCount": 48,
+      "deadlineStats": {
+        "future": 5,
+        "closed": 21,
+        "unknown": 22
+      },
+      "recommendation": true,
+      "message": "官公需情報ポータル：検索データが多いため、取得範囲内のおすすめ5件を表示しました。",
+      "partial": true,
+      "elapsedMs": 35261,
+      "sampleItems": [
+        {
+          "id": "bWl5YXpha2kvcHJlZl9taXlhemFraS8yMDI2LzIwMjYwOTA0XzAwNDMxCg==",
+          "title": "総合防災情報ネットワーク関連の点検保守委託に係る一般競争入札について（令和8年9月4日公告）",
+          "agency": "宮崎県",
+          "deadline": "2026-09-14",
+          "officialUrl": "https://www.pref.miyazaki.lg.jp/kiki-shobohoan/kense/chotatsu/08/20260824154712.html",
+          "matchedKeywords": [
+            "リスキリング"
+          ]
+        },
+        {
+          "id": "bWl5YXpha2kvcHJlZl9taXlhemFraS8yMDI2LzIwMjYwOTAxXzAwNDI4Cg==",
+          "title": "旅券（パスポート）等輸送業務委託に係る一般競争入札の実施について",
+          "agency": "宮崎県",
+          "deadline": "2026-09-15",
+          "officialUrl": "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/kense/chotatsu/20230823142233.html",
+          "matchedKeywords": [
+            "リスキリング"
+          ]
+        },
+        {
+          "id": "aG9ra2FpZG8yL2FzYWhpa2F3YV9tZWRfYWMvMjAyNi8yMDI2MDkwN18wMDI1Nwo=",
+          "title": "RPA管理システム 一式",
+          "agency": "国立大学法人旭川医科大学",
+          "deadline": "2026-09-18",
+          "officialUrl": "https://www.asahikawa-med.ac.jp/bureau/kaikei/kaisomu/nyuusatsu/R8/08.09.07_2_koukoku.pdf",
+          "matchedKeywords": [
+            "業務改善"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "sfl",
+      "modeLabel": "SFL専用",
+      "sourceId": "p-portal",
+      "sourceLabel": "調達ポータル",
+      "keywords": "生成AI研修、DX研修、リスキリング、業務改善、Webサイト制作",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:54:39.050Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E7%94%9F%E6%88%90AI%E7%A0%94%E4%BF%AE+OR+DX%E7%A0%94%E4%BF%AE+OR+%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%AA%E3%83%B3%E3%82%B0+OR+%E6%A5%AD%E5%8B%99%E6%94%B9%E5%96%84+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C&Count=300",
+          "status": 200,
+          "contentLength": null
+        },
+        {
+          "count": 50,
+          "url": "https://www.kkj.go.jp/api/?Query=%E7%94%9F%E6%88%90AI%E7%A0%94%E4%BF%AE+OR+DX%E7%A0%94%E4%BF%AE+OR+%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%AA%E3%83%B3%E3%82%B0+OR+%E6%A5%AD%E5%8B%99%E6%94%B9%E5%96%84+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C&Count=50",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 2318,
+      "inspectedCount": 50,
+      "matchedCount": 1,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 1,
+        "unknown": 0
+      },
+      "recommendation": true,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": true,
+      "elapsedMs": 33545,
+      "sampleItems": []
+    },
+    {
+      "mode": "sfl",
+      "modeLabel": "SFL専用",
+      "sourceId": "njss",
+      "sourceLabel": "NJSS",
+      "keywords": "生成AI研修、DX研修、リスキリング、業務改善、Webサイト制作",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:55:12.596Z",
+      "requests": [],
+      "outcome": "external-only",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "recommendation": false,
+      "partial": false,
+      "elapsedMs": 13,
+      "sampleItems": []
+    },
+    {
+      "mode": "sfl",
+      "modeLabel": "SFL専用",
+      "sourceId": "mod",
+      "sourceLabel": "防衛省",
+      "keywords": "生成AI研修、DX研修、リスキリング、業務改善、Webサイト制作",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:55:12.609Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E7%94%9F%E6%88%90AI%E7%A0%94%E4%BF%AE+OR+DX%E7%A0%94%E4%BF%AE+OR+%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%AA%E3%83%B3%E3%82%B0+OR+%E6%A5%AD%E5%8B%99%E6%94%B9%E5%96%84+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 9,
+      "inspectedCount": 9,
+      "matchedCount": 9,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 9
+      },
+      "recommendation": false,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": true,
+      "elapsedMs": 15603,
+      "sampleItems": []
+    },
+    {
+      "mode": "sfl",
+      "modeLabel": "SFL専用",
+      "sourceId": "gsdf",
+      "sourceLabel": "陸上自衛隊",
+      "keywords": "生成AI研修、DX研修、リスキリング、業務改善、Webサイト制作",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:55:28.213Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%94%9F%E6%88%90AI%E7%A0%94%E4%BF%AE+OR+DX%E7%A0%94%E4%BF%AE+OR+%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%AA%E3%83%B3%E3%82%B0+OR+%E6%A5%AD%E5%8B%99%E6%94%B9%E5%96%84+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+%29+AND+%28+%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E9%99%B8%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 6,
+      "inspectedCount": 6,
+      "matchedCount": 5,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 5
+      },
+      "recommendation": false,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": true,
+      "elapsedMs": 741,
+      "sampleItems": []
+    },
+    {
+      "mode": "sfl",
+      "modeLabel": "SFL専用",
+      "sourceId": "msdf",
+      "sourceLabel": "海上自衛隊",
+      "keywords": "生成AI研修、DX研修、リスキリング、業務改善、Webサイト制作",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:55:28.954Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%94%9F%E6%88%90AI%E7%A0%94%E4%BF%AE+OR+DX%E7%A0%94%E4%BF%AE+OR+%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%AA%E3%83%B3%E3%82%B0+OR+%E6%A5%AD%E5%8B%99%E6%94%B9%E5%96%84+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+%29+AND+%28+%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E6%B5%B7%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 0,
+      "inspectedCount": 0,
+      "matchedCount": 0,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 0
+      },
+      "recommendation": false,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": false,
+      "elapsedMs": 657,
+      "sampleItems": []
+    },
+    {
+      "mode": "sfl",
+      "modeLabel": "SFL専用",
+      "sourceId": "asdf",
+      "sourceLabel": "航空自衛隊",
+      "keywords": "生成AI研修、DX研修、リスキリング、業務改善、Webサイト制作",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:55:29.611Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%94%9F%E6%88%90AI%E7%A0%94%E4%BF%AE+OR+DX%E7%A0%94%E4%BF%AE+OR+%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%AA%E3%83%B3%E3%82%B0+OR+%E6%A5%AD%E5%8B%99%E6%94%B9%E5%96%84+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+%29+AND+%28+%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E7%A9%BA%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 0,
+      "inspectedCount": 0,
+      "matchedCount": 0,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 0
+      },
+      "recommendation": false,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": false,
+      "elapsedMs": 700,
+      "sampleItems": []
+    },
+    {
+      "mode": "engineer",
+      "modeLabel": "SFL(エンジニア専用)",
+      "sourceId": "kkj",
+      "sourceLabel": "官公需情報ポータル",
+      "keywords": "ウェブサイト制作、Webサイト制作、ホームページ制作、ホームページ再構築、公式サイト再構築、ウェブサイト再構築、サイトリニューアル、Webサイトリニューアル、ポータルサイト構築、情報発信サイト構築、特設サイト構築、広報サイト制作、Webページ構築、ウェブコンテンツ制作、Webサイト制作業務委託、ホームページ運用保守業務、CMS導入業務、情報発信サイト構築業務、講座情報検索システム構築業務、イベント情報検索サイト構築業務、施設情報検索システム構築業務、データベース公開システム構築業務、台帳管理システム構築業務、ポータルサイト運用管理業務、Webサイト再構築・運用保守業務、Webシステム改修業務、Webアプリケーション構築業務、電子申請フォーム構築業務、予約受付システム導入業務、公共施設予約システム導入業務、イベント申込管理システム構築業務",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:55:30.312Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E5%BA%83%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%83%9A%E3%83%BC%E3%82%B8%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+CMS%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E8%AC%9B%E5%BA%A7%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%85%AC%E9%96%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E5%8F%B0%E5%B8%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E9%81%8B%E7%94%A8%E7%AE%A1%E7%90%86%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89%E3%83%BB%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E4%BF%AE%E6%A5%AD%E5%8B%99+OR+Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E9%9B%BB%E5%AD%90%E7%94%B3%E8%AB%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E4%BA%88%E7%B4%84%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%94%B3%E8%BE%BC%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99&Count=300",
+          "status": 200,
+          "contentLength": null
+        },
+        {
+          "count": 50,
+          "url": "https://www.kkj.go.jp/api/?Query=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E5%BA%83%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%83%9A%E3%83%BC%E3%82%B8%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+CMS%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E8%AC%9B%E5%BA%A7%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%85%AC%E9%96%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E5%8F%B0%E5%B8%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E9%81%8B%E7%94%A8%E7%AE%A1%E7%90%86%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89%E3%83%BB%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E4%BF%AE%E6%A5%AD%E5%8B%99+OR+Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E9%9B%BB%E5%AD%90%E7%94%B3%E8%AB%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E4%BA%88%E7%B4%84%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%94%B3%E8%BE%BC%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99&Count=50",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "rows",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 3,
+      "upstreamHits": 741,
+      "inspectedCount": 50,
+      "matchedCount": 50,
+      "deadlineStats": {
+        "future": 3,
+        "closed": 17,
+        "unknown": 30
+      },
+      "recommendation": true,
+      "message": "官公需情報ポータル：検索データが多いため、取得範囲内のおすすめ3件を表示しました。",
+      "partial": true,
+      "elapsedMs": 24402,
+      "sampleItems": [
+        {
+          "id": "Z292OS9qc3BzLzIwMjYvMjAyNjA4MjFfMDAyNjYK",
+          "title": "ウェブサイトリニューアル・運用保守・運用支援業務 一式(PDF/174KB)",
+          "agency": "独立行政法人日本学術振興会",
+          "deadline": "2026-10-13",
+          "officialUrl": "https://www.jsps.go.jp/file/storage/j-choutatsu/procurement/R8.6_koukoku.pdf",
+          "matchedKeywords": [
+            "サイトリニューアル"
+          ]
+        },
+        {
+          "id": "bWl5YXpha2kvcHJlZl9taXlhemFraS8yMDI2LzIwMjYwOTA0XzAwNDMxCg==",
+          "title": "総合防災情報ネットワーク関連の点検保守委託に係る一般競争入札について（令和8年9月4日公告）",
+          "agency": "宮崎県",
+          "deadline": "2026-09-14",
+          "officialUrl": "https://www.pref.miyazaki.lg.jp/kiki-shobohoan/kense/chotatsu/08/20260824154712.html",
+          "matchedKeywords": [
+            "ホームページ制作"
+          ]
+        },
+        {
+          "id": "bWl5YXpha2kvcHJlZl9taXlhemFraS8yMDI2LzIwMjYwOTAxXzAwNDI4Cg==",
+          "title": "旅券（パスポート）等輸送業務委託に係る一般競争入札の実施について",
+          "agency": "宮崎県",
+          "deadline": "2026-09-15",
+          "officialUrl": "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/kense/chotatsu/20230823142233.html",
+          "matchedKeywords": [
+            "ホームページ制作"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "engineer",
+      "modeLabel": "SFL(エンジニア専用)",
+      "sourceId": "p-portal",
+      "sourceLabel": "調達ポータル",
+      "keywords": "ウェブサイト制作、Webサイト制作、ホームページ制作、ホームページ再構築、公式サイト再構築、ウェブサイト再構築、サイトリニューアル、Webサイトリニューアル、ポータルサイト構築、情報発信サイト構築、特設サイト構築、広報サイト制作、Webページ構築、ウェブコンテンツ制作、Webサイト制作業務委託、ホームページ運用保守業務、CMS導入業務、情報発信サイト構築業務、講座情報検索システム構築業務、イベント情報検索サイト構築業務、施設情報検索システム構築業務、データベース公開システム構築業務、台帳管理システム構築業務、ポータルサイト運用管理業務、Webサイト再構築・運用保守業務、Webシステム改修業務、Webアプリケーション構築業務、電子申請フォーム構築業務、予約受付システム導入業務、公共施設予約システム導入業務、イベント申込管理システム構築業務",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:55:54.715Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E5%BA%83%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%83%9A%E3%83%BC%E3%82%B8%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+CMS%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E8%AC%9B%E5%BA%A7%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%85%AC%E9%96%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E5%8F%B0%E5%B8%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E9%81%8B%E7%94%A8%E7%AE%A1%E7%90%86%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89%E3%83%BB%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E4%BF%AE%E6%A5%AD%E5%8B%99+OR+Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E9%9B%BB%E5%AD%90%E7%94%B3%E8%AB%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E4%BA%88%E7%B4%84%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%94%B3%E8%BE%BC%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99&Count=300",
+          "status": 200,
+          "contentLength": null
+        },
+        {
+          "count": 50,
+          "url": "https://www.kkj.go.jp/api/?Query=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E5%BA%83%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%83%9A%E3%83%BC%E3%82%B8%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+CMS%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E8%AC%9B%E5%BA%A7%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%85%AC%E9%96%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E5%8F%B0%E5%B8%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E9%81%8B%E7%94%A8%E7%AE%A1%E7%90%86%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89%E3%83%BB%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E4%BF%AE%E6%A5%AD%E5%8B%99+OR+Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E9%9B%BB%E5%AD%90%E7%94%B3%E8%AB%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E4%BA%88%E7%B4%84%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%94%B3%E8%BE%BC%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99&Count=50",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 741,
+      "inspectedCount": 50,
+      "matchedCount": 0,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 0
+      },
+      "recommendation": true,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": true,
+      "elapsedMs": 40968,
+      "sampleItems": []
+    },
+    {
+      "mode": "engineer",
+      "modeLabel": "SFL(エンジニア専用)",
+      "sourceId": "njss",
+      "sourceLabel": "NJSS",
+      "keywords": "ウェブサイト制作、Webサイト制作、ホームページ制作、ホームページ再構築、公式サイト再構築、ウェブサイト再構築、サイトリニューアル、Webサイトリニューアル、ポータルサイト構築、情報発信サイト構築、特設サイト構築、広報サイト制作、Webページ構築、ウェブコンテンツ制作、Webサイト制作業務委託、ホームページ運用保守業務、CMS導入業務、情報発信サイト構築業務、講座情報検索システム構築業務、イベント情報検索サイト構築業務、施設情報検索システム構築業務、データベース公開システム構築業務、台帳管理システム構築業務、ポータルサイト運用管理業務、Webサイト再構築・運用保守業務、Webシステム改修業務、Webアプリケーション構築業務、電子申請フォーム構築業務、予約受付システム導入業務、公共施設予約システム導入業務、イベント申込管理システム構築業務",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:56:35.684Z",
+      "requests": [],
+      "outcome": "external-only",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "recommendation": false,
+      "partial": false,
+      "elapsedMs": 16,
+      "sampleItems": []
+    },
+    {
+      "mode": "engineer",
+      "modeLabel": "SFL(エンジニア専用)",
+      "sourceId": "mod",
+      "sourceLabel": "防衛省",
+      "keywords": "ウェブサイト制作、Webサイト制作、ホームページ制作、ホームページ再構築、公式サイト再構築、ウェブサイト再構築、サイトリニューアル、Webサイトリニューアル、ポータルサイト構築、情報発信サイト構築、特設サイト構築、広報サイト制作、Webページ構築、ウェブコンテンツ制作、Webサイト制作業務委託、ホームページ運用保守業務、CMS導入業務、情報発信サイト構築業務、講座情報検索システム構築業務、イベント情報検索サイト構築業務、施設情報検索システム構築業務、データベース公開システム構築業務、台帳管理システム構築業務、ポータルサイト運用管理業務、Webサイト再構築・運用保守業務、Webシステム改修業務、Webアプリケーション構築業務、電子申請フォーム構築業務、予約受付システム導入業務、公共施設予約システム導入業務、イベント申込管理システム構築業務",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:56:35.701Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E5%BA%83%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%83%9A%E3%83%BC%E3%82%B8%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+CMS%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E8%AC%9B%E5%BA%A7%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%85%AC%E9%96%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E5%8F%B0%E5%B8%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E9%81%8B%E7%94%A8%E7%AE%A1%E7%90%86%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89%E3%83%BB%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E4%BF%AE%E6%A5%AD%E5%8B%99+OR+Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E9%9B%BB%E5%AD%90%E7%94%B3%E8%AB%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E4%BA%88%E7%B4%84%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%94%B3%E8%BE%BC%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 0,
+      "inspectedCount": 0,
+      "matchedCount": 0,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 0
+      },
+      "recommendation": false,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": false,
+      "elapsedMs": 17700,
+      "sampleItems": []
+    },
+    {
+      "mode": "engineer",
+      "modeLabel": "SFL(エンジニア専用)",
+      "sourceId": "gsdf",
+      "sourceLabel": "陸上自衛隊",
+      "keywords": "ウェブサイト制作、Webサイト制作、ホームページ制作、ホームページ再構築、公式サイト再構築、ウェブサイト再構築、サイトリニューアル、Webサイトリニューアル、ポータルサイト構築、情報発信サイト構築、特設サイト構築、広報サイト制作、Webページ構築、ウェブコンテンツ制作、Webサイト制作業務委託、ホームページ運用保守業務、CMS導入業務、情報発信サイト構築業務、講座情報検索システム構築業務、イベント情報検索サイト構築業務、施設情報検索システム構築業務、データベース公開システム構築業務、台帳管理システム構築業務、ポータルサイト運用管理業務、Webサイト再構築・運用保守業務、Webシステム改修業務、Webアプリケーション構築業務、電子申請フォーム構築業務、予約受付システム導入業務、公共施設予約システム導入業務、イベント申込管理システム構築業務",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:56:53.402Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E5%BA%83%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%83%9A%E3%83%BC%E3%82%B8%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+CMS%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E8%AC%9B%E5%BA%A7%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%85%AC%E9%96%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E5%8F%B0%E5%B8%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E9%81%8B%E7%94%A8%E7%AE%A1%E7%90%86%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89%E3%83%BB%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E4%BF%AE%E6%A5%AD%E5%8B%99+OR+Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E9%9B%BB%E5%AD%90%E7%94%B3%E8%AB%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E4%BA%88%E7%B4%84%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%94%B3%E8%BE%BC%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+%29+AND+%28+%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E9%99%B8%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 0,
+      "inspectedCount": 0,
+      "matchedCount": 0,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 0
+      },
+      "recommendation": false,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": false,
+      "elapsedMs": 3244,
+      "sampleItems": []
+    },
+    {
+      "mode": "engineer",
+      "modeLabel": "SFL(エンジニア専用)",
+      "sourceId": "msdf",
+      "sourceLabel": "海上自衛隊",
+      "keywords": "ウェブサイト制作、Webサイト制作、ホームページ制作、ホームページ再構築、公式サイト再構築、ウェブサイト再構築、サイトリニューアル、Webサイトリニューアル、ポータルサイト構築、情報発信サイト構築、特設サイト構築、広報サイト制作、Webページ構築、ウェブコンテンツ制作、Webサイト制作業務委託、ホームページ運用保守業務、CMS導入業務、情報発信サイト構築業務、講座情報検索システム構築業務、イベント情報検索サイト構築業務、施設情報検索システム構築業務、データベース公開システム構築業務、台帳管理システム構築業務、ポータルサイト運用管理業務、Webサイト再構築・運用保守業務、Webシステム改修業務、Webアプリケーション構築業務、電子申請フォーム構築業務、予約受付システム導入業務、公共施設予約システム導入業務、イベント申込管理システム構築業務",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:56:56.647Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E5%BA%83%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%83%9A%E3%83%BC%E3%82%B8%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+CMS%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E8%AC%9B%E5%BA%A7%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%85%AC%E9%96%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E5%8F%B0%E5%B8%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E9%81%8B%E7%94%A8%E7%AE%A1%E7%90%86%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89%E3%83%BB%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E4%BF%AE%E6%A5%AD%E5%8B%99+OR+Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E9%9B%BB%E5%AD%90%E7%94%B3%E8%AB%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E4%BA%88%E7%B4%84%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%94%B3%E8%BE%BC%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+%29+AND+%28+%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E6%B5%B7%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 0,
+      "inspectedCount": 0,
+      "matchedCount": 0,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 0
+      },
+      "recommendation": false,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": false,
+      "elapsedMs": 3210,
+      "sampleItems": []
+    },
+    {
+      "mode": "engineer",
+      "modeLabel": "SFL(エンジニア専用)",
+      "sourceId": "asdf",
+      "sourceLabel": "航空自衛隊",
+      "keywords": "ウェブサイト制作、Webサイト制作、ホームページ制作、ホームページ再構築、公式サイト再構築、ウェブサイト再構築、サイトリニューアル、Webサイトリニューアル、ポータルサイト構築、情報発信サイト構築、特設サイト構築、広報サイト制作、Webページ構築、ウェブコンテンツ制作、Webサイト制作業務委託、ホームページ運用保守業務、CMS導入業務、情報発信サイト構築業務、講座情報検索システム構築業務、イベント情報検索サイト構築業務、施設情報検索システム構築業務、データベース公開システム構築業務、台帳管理システム構築業務、ポータルサイト運用管理業務、Webサイト再構築・運用保守業務、Webシステム改修業務、Webアプリケーション構築業務、電子申請フォーム構築業務、予約受付システム導入業務、公共施設予約システム導入業務、イベント申込管理システム構築業務",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:56:59.858Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89+OR+%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89+OR+%E5%BA%83%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C+OR+Web%E3%83%9A%E3%83%BC%E3%82%B8%E6%A7%8B%E7%AF%89+OR+%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%88%B6%E4%BD%9C+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97+OR+%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+CMS%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E6%83%85%E5%A0%B1%E7%99%BA%E4%BF%A1%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E8%AC%9B%E5%BA%A7%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%82%A4%E3%83%88%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%85%AC%E9%96%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E5%8F%B0%E5%B8%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88%E9%81%8B%E7%94%A8%E7%AE%A1%E7%90%86%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B5%E3%82%A4%E3%83%88%E5%86%8D%E6%A7%8B%E7%AF%89%E3%83%BB%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E6%A5%AD%E5%8B%99+OR+Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E4%BF%AE%E6%A5%AD%E5%8B%99+OR+Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E9%9B%BB%E5%AD%90%E7%94%B3%E8%AB%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+OR+%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E4%BA%88%E7%B4%84%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%B0%8E%E5%85%A5%E6%A5%AD%E5%8B%99+OR+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%94%B3%E8%BE%BC%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E6%A5%AD%E5%8B%99+%29+AND+%28+%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E7%A9%BA%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 0,
+      "inspectedCount": 0,
+      "matchedCount": 0,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 0
+      },
+      "recommendation": false,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": false,
+      "elapsedMs": 3240,
+      "sampleItems": []
+    },
+    {
+      "mode": "academy",
+      "modeLabel": "一般用(Academy専用)",
+      "sourceId": "kkj",
+      "sourceLabel": "官公需情報ポータル",
+      "keywords": "物品、事務用品、印刷、清掃",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:57:03.099Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=300",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "rows",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 100,
+      "upstreamHits": 389688,
+      "inspectedCount": 300,
+      "matchedCount": 300,
+      "deadlineStats": {
+        "future": 109,
+        "closed": 2,
+        "unknown": 189
+      },
+      "recommendation": false,
+      "message": "官公需情報ポータル：締切が検索日より未来の100件を表示しました。",
+      "partial": true,
+      "elapsedMs": 3296,
+      "sampleItems": [
+        {
+          "id": "Z292OS9qbWV0c19hYy8yMDI2LzIwMjYwOTEwXzAwMjk4Cg==",
+          "title": "海技大 海技丸A 重油の購入",
+          "agency": "独立行政法人海技教育機構",
+          "deadline": "2026-09-16",
+          "officialUrl": "https://www.jmets.ac.jp/procurement/fhrhtb0000002ocr-att/fhrhtb0000002odg.pdf",
+          "matchedKeywords": [
+            "物品"
+          ]
+        },
+        {
+          "id": "dG9reW8vbmNucF9nby8yMDI2LzIwMjYwOTEwXzAyMDAyCg==",
+          "title": "【再度公告】オールインワン蛍光顕微鏡 一式",
+          "agency": "国立研究開発法人国立精神・神経医療研究センター",
+          "deadline": "2026-09-17",
+          "officialUrl": "https://www.ncnp.go.jp/press_search/images/bid/bid_yyGV3nXS9tPnNbfT_1.pdf",
+          "matchedKeywords": [
+            "物品"
+          ]
+        },
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDkvMjAyNjA5MDlfNzg4NDIK",
+          "title": "令和８年度金沢刑務所物品（銅線）売払い",
+          "agency": "法務省",
+          "deadline": "2026-09-17",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "academy",
+      "modeLabel": "一般用(Academy専用)",
+      "sourceId": "p-portal",
+      "sourceLabel": "調達ポータル",
+      "keywords": "物品、事務用品、印刷、清掃",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:57:06.396Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=300",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "rows",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 42,
+      "upstreamHits": 389688,
+      "inspectedCount": 300,
+      "matchedCount": 120,
+      "deadlineStats": {
+        "future": 42,
+        "closed": 0,
+        "unknown": 78
+      },
+      "recommendation": false,
+      "message": "調達ポータル：締切が検索日より未来の42件を表示しました。",
+      "partial": true,
+      "elapsedMs": 2095,
+      "sampleItems": [
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDkvMjAyNjA5MDlfNzg4NDIK",
+          "title": "令和８年度金沢刑務所物品（銅線）売払い",
+          "agency": "法務省",
+          "deadline": "2026-09-17",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品"
+          ]
+        },
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDkvMjAyNjA5MDlfNzg4ODgK",
+          "title": "事故車の修理に要する標準作業時間の調査",
+          "agency": "国土交通省",
+          "deadline": "2026-09-25",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品"
+          ]
+        },
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDkvMjAyNjA5MDlfNzg4ODYK",
+          "title": "特定技能制度及び育成就労制度にかかる協議会事務局の運営委託",
+          "agency": "国土交通省",
+          "deadline": "2026-09-25",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "academy",
+      "modeLabel": "一般用(Academy専用)",
+      "sourceId": "njss",
+      "sourceLabel": "NJSS",
+      "keywords": "物品、事務用品、印刷、清掃",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:57:08.494Z",
+      "requests": [],
+      "outcome": "external-only",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "recommendation": false,
+      "partial": false,
+      "elapsedMs": 14,
+      "sampleItems": []
+    },
+    {
+      "mode": "academy",
+      "modeLabel": "一般用(Academy専用)",
+      "sourceId": "mod",
+      "sourceLabel": "防衛省",
+      "keywords": "物品、事務用品、印刷、清掃",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:57:08.511Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "rows",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 19,
+      "upstreamHits": 42034,
+      "inspectedCount": 300,
+      "matchedCount": 282,
+      "deadlineStats": {
+        "future": 19,
+        "closed": 46,
+        "unknown": 217
+      },
+      "recommendation": false,
+      "message": "防衛省：締切が検索日より未来の19件を表示しました。",
+      "partial": true,
+      "elapsedMs": 3207,
+      "sampleItems": [
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDgvMjAyNjA4MjBfNzc1OTAK",
+          "title": "北関東防衛局（８）電動昇降デスクほか１７件の購入",
+          "agency": "防衛省",
+          "deadline": "2026-09-16",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品"
+          ]
+        },
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDgvMjAyNjA4MDRfNzY5MTQK",
+          "title": "北海道防衛局（８）地下書庫改修業務",
+          "agency": "防衛省",
+          "deadline": "2026-09-16",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品"
+          ]
+        },
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDYvMjAyNjA2MjRfNzQzOTAK",
+          "title": "机（平型）他12件",
+          "agency": "防衛省",
+          "deadline": "2026-09-17",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "academy",
+      "modeLabel": "一般用(Academy専用)",
+      "sourceId": "gsdf",
+      "sourceLabel": "陸上自衛隊",
+      "keywords": "物品、事務用品、印刷、清掃",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:57:11.720Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E9%99%B8%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        },
+        {
+          "count": 50,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E9%99%B8%E8%87%AA+%29&Count=50&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "rows",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 6,
+      "upstreamHits": 20906,
+      "inspectedCount": 50,
+      "matchedCount": 39,
+      "deadlineStats": {
+        "future": 6,
+        "closed": 2,
+        "unknown": 31
+      },
+      "recommendation": true,
+      "message": "陸上自衛隊：検索データが多いため、取得範囲内のおすすめ6件を表示しました。",
+      "partial": true,
+      "elapsedMs": 20491,
+      "sampleItems": [
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDgvMjAyNjA4MDZfNzcxMTMK",
+          "title": "（陸自）神町駐屯地に係る施設発生物品の売払い",
+          "agency": "防衛省",
+          "deadline": "2026-09-25",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品",
+            "清掃"
+          ]
+        },
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDgvMjAyNjA4MDZfNzcxMTAK",
+          "title": "（陸自）郡山駐屯地他２施設に係る施設発生物品の売払い",
+          "agency": "防衛省",
+          "deadline": "2026-09-29",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品",
+            "清掃"
+          ]
+        },
+        {
+          "id": "c2VhcmNoL3BfcG9ydGFsLzIwMjYvMDgvMjAyNjA4MDZfNzcxMDgK",
+          "title": "（陸自）秋田駐屯地他１施設に係る施設発生物品の売払い",
+          "agency": "防衛省",
+          "deadline": "2026-09-29",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "matchedKeywords": [
+            "物品",
+            "清掃"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "academy",
+      "modeLabel": "一般用(Academy専用)",
+      "sourceId": "msdf",
+      "sourceLabel": "海上自衛隊",
+      "keywords": "物品、事務用品、印刷、清掃",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:57:32.214Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E6%B5%B7%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        },
+        {
+          "count": 50,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E6%B5%B7%E8%87%AA+%29&Count=50&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 4510,
+      "inspectedCount": 50,
+      "matchedCount": 0,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 0
+      },
+      "recommendation": true,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": true,
+      "elapsedMs": 50659,
+      "sampleItems": []
+    },
+    {
+      "mode": "academy",
+      "modeLabel": "一般用(Academy専用)",
+      "sourceId": "asdf",
+      "sourceLabel": "航空自衛隊",
+      "keywords": "物品、事務用品、印刷、清掃",
+      "scope": "fulltext",
+      "startedAt": "2026-09-11T07:58:22.879Z",
+      "requests": [
+        {
+          "count": 300,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E7%A9%BA%E8%87%AA+%29&Count=300&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        },
+        {
+          "count": 50,
+          "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E7%A9%BA%E8%87%AA+%29&Count=50&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81",
+          "status": 200,
+          "contentLength": null
+        }
+      ],
+      "outcome": "empty",
+      "formPassed": true,
+      "renderPassed": true,
+      "displayed": 0,
+      "upstreamHits": 8669,
+      "inspectedCount": 50,
+      "matchedCount": 1,
+      "deadlineStats": {
+        "future": 0,
+        "closed": 0,
+        "unknown": 1
+      },
+      "recommendation": true,
+      "message": "取得した情報の中に、検索日より未来の入札締切日を確認できる案件はありませんでした。",
+      "partial": true,
+      "elapsedMs": 38592,
+      "sampleItems": []
+    }
+  ],
+  "testedVersion": 55,
+  "testedSourceCommit": "a3961de335d786d3744a74b2f997a932dffde523",
+  "productionAuthenticatedBrowserTest": "not completed; authentication unavailable in preview and authenticated production request rejected by automatic approval review"
+}

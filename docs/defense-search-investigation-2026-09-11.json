@@ -1,0 +1,383 @@
+{
+  "capturedAt": "2026-09-11T08:41:11.214754+00:00",
+  "testedCommit": "a3961de335d786d3744a74b2f997a932dffde523",
+  "scope": "Diagnostic API queries against public official data; not production browser end-to-end tests. No app changes or Lark writes.",
+  "productionAuth": {
+    "path": "/api/workspace",
+    "status": 401,
+    "error": "ChatGPTでログインしてください。",
+    "explicitTokenTransmissionApproval": true,
+    "browserSearchMatrixCompleted": false
+  },
+  "keywords": [
+    "物品",
+    "事務用品",
+    "印刷",
+    "清掃"
+  ],
+  "apiComparison": [
+    {
+      "id": "gsdf",
+      "variant": "recent",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E9%99%B8%E8%87%AA+%29&Count=30&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81&CFT_Issue_Date=2026-06-01%2F",
+      "totalHits": 16,
+      "returned": 16,
+      "matched": 7,
+      "future": 6,
+      "unknown": 0,
+      "agencies": [
+        "防衛省"
+      ],
+      "indexedDateRange": {
+        "min": "2026-07-01",
+        "max": "2026-09-08"
+      },
+      "examples": [
+        {
+          "title": "嘉手納地区（８）廃棄物収集運搬・処分業務",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-09-08",
+          "deadline": "2026-10-20",
+          "sourceMatched": false
+        },
+        {
+          "title": "陸自宮古島宿舎（仮称）（８）不動産鑑定評価業務",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-08-27",
+          "deadline": "2026-10-08",
+          "sourceMatched": true
+        },
+        {
+          "title": "北海道防衛局（８）仮設プレハブ等借上業務",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-08-17",
+          "deadline": "2026-09-24",
+          "sourceMatched": false
+        }
+      ]
+    },
+    {
+      "id": "gsdf",
+      "variant": "agency",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=30&Organization_Name=%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E9%99%B8%E8%87%AA",
+      "totalHits": 19604,
+      "returned": 30,
+      "matched": 30,
+      "future": 0,
+      "unknown": 29,
+      "agencies": [
+        "防衛省陸上自衛隊中部方面会計隊"
+      ],
+      "indexedDateRange": {
+        "min": "2026-05-20",
+        "max": "2026-05-22"
+      },
+      "examples": [
+        {
+          "title": "デスク（ダークブラウン） ほか２件",
+          "agency": "防衛省陸上自衛隊中部方面会計隊",
+          "officialUrl": "https://www.mod.go.jp/gsdf/mae/mafin/k/ko080936.pdf",
+          "indexedDate": "2026-05-22",
+          "deadline": "",
+          "sourceMatched": true
+        },
+        {
+          "title": "シューズラックほか５件",
+          "agency": "防衛省陸上自衛隊中部方面会計隊",
+          "officialUrl": "https://www.mod.go.jp/gsdf/mae/mafin/k/ko080935.pdf",
+          "indexedDate": "2026-05-22",
+          "deadline": "",
+          "sourceMatched": true
+        },
+        {
+          "title": "営内班用ハンガーラック ほか２件",
+          "agency": "防衛省陸上自衛隊中部方面会計隊",
+          "officialUrl": "https://www.mod.go.jp/gsdf/mae/mafin/k/ko080934.pdf",
+          "indexedDate": "2026-05-22",
+          "deadline": "",
+          "sourceMatched": true
+        }
+      ]
+    },
+    {
+      "id": "gsdf",
+      "variant": "agency-recent",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=30&Organization_Name=%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E9%99%B8%E8%87%AA&CFT_Issue_Date=2026-06-01%2F",
+      "totalHits": 0,
+      "returned": 0,
+      "matched": 0,
+      "future": 0,
+      "unknown": 0,
+      "agencies": [],
+      "indexedDateRange": null,
+      "examples": []
+    },
+    {
+      "id": "msdf",
+      "variant": "recent",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E6%B5%B7%E8%87%AA+%29&Count=30&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81&CFT_Issue_Date=2026-06-01%2F",
+      "totalHits": 6,
+      "returned": 6,
+      "matched": 0,
+      "future": 0,
+      "unknown": 0,
+      "agencies": [
+        "防衛省"
+      ],
+      "indexedDateRange": {
+        "min": "2026-07-09",
+        "max": "2026-08-26"
+      },
+      "examples": [
+        {
+          "title": "よう船",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-08-26",
+          "deadline": "",
+          "sourceMatched": false
+        },
+        {
+          "title": "（陸自）八戸駐屯地他８施設に係る施設発生物品の売払い",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-08-06",
+          "deadline": "2026-09-29",
+          "sourceMatched": false
+        },
+        {
+          "title": "【防衛装備庁】FRPボート用台車の製作",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-08-05",
+          "deadline": "",
+          "sourceMatched": false
+        }
+      ]
+    },
+    {
+      "id": "msdf",
+      "variant": "agency",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=30&Organization_Name=%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E6%B5%B7%E8%87%AA",
+      "totalHits": 3642,
+      "returned": 30,
+      "matched": 30,
+      "future": 0,
+      "unknown": 21,
+      "agencies": [
+        "防衛省海上自衛隊 館山航空基地隊",
+        "防衛省海上自衛隊 横須賀地方総監部",
+        "防衛省海上自衛隊 補給本部",
+        "防衛省海上自衛隊 八戸航空基地隊",
+        "防衛省海上自衛隊 函館基地隊",
+        "防衛省海上自衛隊 舞鶴地方総監部",
+        "防衛省海上自衛隊 鹿屋航空基地隊",
+        "防衛省海上自衛隊 佐世保地方総監部",
+        "防衛省海上自衛隊 第２４航空隊",
+        "防衛省海上自衛隊 徳島航空基地隊",
+        "防衛省海上自衛隊 小月航空基地隊",
+        "防衛省海上自衛隊 那覇航空基地隊",
+        "防衛省海上自衛隊 阪神基地隊"
+      ],
+      "indexedDateRange": {
+        "min": "2025-06-26",
+        "max": "2025-06-27"
+      },
+      "examples": [
+        {
+          "title": "ガスコンロ 以下",
+          "agency": "防衛省海上自衛隊 館山航空基地隊",
+          "officialUrl": "https://www.mod.go.jp/msdf/bukei/y2/nyuusatsu/07-1-1152-0600-6002.pdf",
+          "indexedDate": "2025-06-27",
+          "deadline": "",
+          "sourceMatched": true
+        },
+        {
+          "title": "パッケージ型空調機の換装",
+          "agency": "防衛省海上自衛隊 館山航空基地隊",
+          "officialUrl": "https://www.mod.go.jp/msdf/bukei/y2/nyuusatsu/07-1-1372-0300-3009.pdf",
+          "indexedDate": "2025-06-27",
+          "deadline": "",
+          "sourceMatched": true
+        },
+        {
+          "title": "逸見地区発電機室変圧器等更新",
+          "agency": "防衛省海上自衛隊 横須賀地方総監部",
+          "officialUrl": "https://www.mod.go.jp/msdf/bukei/y0/nyuusatsu/07-1-2381-2050-3502.pdf",
+          "indexedDate": "2025-06-27",
+          "deadline": "2025-07-18",
+          "sourceMatched": true
+        }
+      ]
+    },
+    {
+      "id": "msdf",
+      "variant": "agency-recent",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=30&Organization_Name=%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E6%B5%B7%E8%87%AA&CFT_Issue_Date=2026-06-01%2F",
+      "totalHits": 0,
+      "returned": 0,
+      "matched": 0,
+      "future": 0,
+      "unknown": 0,
+      "agencies": [],
+      "indexedDateRange": null,
+      "examples": []
+    },
+    {
+      "id": "asdf",
+      "variant": "recent",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%28+%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83+%29+AND+%28+%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E7%A9%BA%E8%87%AA+%29&Count=30&Organization_Name=%E9%98%B2%E8%A1%9B%E7%9C%81&CFT_Issue_Date=2026-06-01%2F",
+      "totalHits": 6,
+      "returned": 6,
+      "matched": 1,
+      "future": 0,
+      "unknown": 1,
+      "agencies": [
+        "防衛省"
+      ],
+      "indexedDateRange": {
+        "min": "2026-07-08",
+        "max": "2026-08-10"
+      },
+      "examples": [
+        {
+          "title": "【新装研】器材借上（備品）",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-08-10",
+          "deadline": "",
+          "sourceMatched": false
+        },
+        {
+          "title": "（陸自）秋田駐屯地他１施設に係る施設発生物品の売払い",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-08-06",
+          "deadline": "2026-09-29",
+          "sourceMatched": false
+        },
+        {
+          "title": "（陸自）仙台駐屯地他７施設に係る施設発生物品の売払い",
+          "agency": "防衛省",
+          "officialUrl": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101",
+          "indexedDate": "2026-08-06",
+          "deadline": "2026-09-29",
+          "sourceMatched": false
+        }
+      ]
+    },
+    {
+      "id": "asdf",
+      "variant": "agency",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=30&Organization_Name=%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E7%A9%BA%E8%87%AA",
+      "totalHits": 8418,
+      "returned": 30,
+      "matched": 29,
+      "future": 0,
+      "unknown": 29,
+      "agencies": [
+        "防衛省航空自衛隊秋田分屯基地",
+        "防衛省航空自衛隊基地契約",
+        "防衛省航空自衛隊松島基地",
+        "防衛省航空自衛隊第4補給処"
+      ],
+      "indexedDateRange": {
+        "min": "2025-06-27",
+        "max": "2025-07-10"
+      },
+      "examples": [
+        {
+          "title": "船川第２宿舎ガスふろ給湯器交換",
+          "agency": "防衛省航空自衛隊秋田分屯基地",
+          "officialUrl": "https://www.mod.go.jp/asdf/akita/sp/choutatsu/pdf/R7koukoku19.pdf",
+          "indexedDate": "2025-07-10",
+          "deadline": "",
+          "sourceMatched": true
+        },
+        {
+          "title": "牛こま切れ 外３０２品目（公告第42号）",
+          "agency": "防衛省航空自衛隊基地契約",
+          "officialUrl": "https://www.mod.go.jp/asdf/hofukita/choutatsu/koukokugaiyou/koukoku/070626_1.pdf",
+          "indexedDate": "2025-06-29",
+          "deadline": "",
+          "sourceMatched": true
+        },
+        {
+          "title": "ラミネーター 外６１０品目",
+          "agency": "防衛省航空自衛隊松島基地",
+          "officialUrl": "https://www.mod.go.jp/asdf/matsushima/tyotatu/nyusatu/images/r7-41.pdf",
+          "indexedDate": "2025-06-27",
+          "deadline": "",
+          "sourceMatched": true
+        }
+      ]
+    },
+    {
+      "id": "asdf",
+      "variant": "agency-recent",
+      "status": 200,
+      "url": "https://www.kkj.go.jp/api/?Query=%E7%89%A9%E5%93%81+OR+%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81+OR+%E5%8D%B0%E5%88%B7+OR+%E6%B8%85%E6%8E%83&Count=30&Organization_Name=%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E7%A9%BA%E8%87%AA&CFT_Issue_Date=2026-06-01%2F",
+      "totalHits": 0,
+      "returned": 0,
+      "matched": 0,
+      "future": 0,
+      "unknown": 0,
+      "agencies": [],
+      "indexedDateRange": null,
+      "examples": []
+    }
+  ],
+  "coverageChecks": [
+    {
+      "name": "gsdf-any-recent",
+      "testedAt": "2026-09-11T08:38:56.589466+00:00",
+      "url": "https://www.kkj.go.jp/api/?Organization_Name=%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E9%99%B8%E8%87%AA&CFT_Issue_Date=2026-06-01%2F&Count=10",
+      "status": 200,
+      "hits": "0",
+      "items": []
+    },
+    {
+      "name": "msdf-any-recent",
+      "testedAt": "2026-09-11T08:39:13.008920+00:00",
+      "url": "https://www.kkj.go.jp/api/?Organization_Name=%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E6%B5%B7%E8%87%AA&CFT_Issue_Date=2026-06-01%2F&Count=10",
+      "status": 200,
+      "hits": "0",
+      "items": []
+    },
+    {
+      "name": "asdf-any-recent",
+      "testedAt": "2026-09-11T08:39:29.124287+00:00",
+      "url": "https://www.kkj.go.jp/api/?Organization_Name=%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A+OR+%E7%A9%BA%E8%87%AA&CFT_Issue_Date=2026-06-01%2F&Count=10",
+      "status": 200,
+      "hits": "0",
+      "items": []
+    },
+    {
+      "name": "asdf-office-notice",
+      "testedAt": "2026-09-11T08:39:44.771674+00:00",
+      "url": "https://www.kkj.go.jp/api/?Project_Name=%E4%BA%8B%E5%8B%99%E7%94%A8%E5%93%81%E7%AD%89%E3%81%AE%E5%80%9F%E4%B8%8A&CFT_Issue_Date=2026-06-01%2F&Count=10",
+      "status": 200,
+      "hits": "0",
+      "items": []
+    },
+    {
+      "name": "msdf-poster-notice",
+      "testedAt": "2026-09-11T08:40:01.270892+00:00",
+      "url": "https://www.kkj.go.jp/api/?Project_Name=%E9%96%8B%E9%9A%8A%EF%BC%97%EF%BC%90%E5%91%A8%E5%B9%B4%E8%A8%98%E5%BF%B5%E6%BC%94%E5%A5%8F%E4%BC%9A&Count=10",
+      "status": 200,
+      "hits": "0",
+      "items": []
+    }
+  ]
+}
